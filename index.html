@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title> Age calculator app</title>
+</head>
+<body>
+  <form action="#" id="form">
+    <section class="inputs-section">
+      <div>
+        <label for="day">day</label>
+        <input placeholder="DD" type="number" id="day-input" name="day">
+        <p class="required" id="day-error"></p>
+      </div>
+      <div>
+        <label for="month">month</label>
+        <input placeholder="MM" type="number" id="month-input" name="month">
+        <p class="required" id="month-error"></p>
+      </div>
+      <div>
+        <label for="year">year</label>
+        <input placeholder="YY" type="number" id="year-input" name="year" min="1900">
+        <p class="required" id="year-error"></p>
+      </div>
+    </section>
+    <div class="btn--container">
+      <div class="line"></div>
+      <button name="Arrow" type="submit"><img alt="arrow" src="assets/images/icon-arrow.svg"></button>
+    </div>
+    <section class="result-container">
+      <div class="result--inner--container">
+        <h1 id="result-year">-- </h1>
+        <span>years</span>
+      </div>
+      <div class="result--inner--container">
+        <h1 id="result-month">-- </h1>
+        <span>months</span>
+      </div>
+      <div class="result--inner--container">
+        <h1 id="result-day">-- </h1>
+        <span>days</span>
+      </div>
+      
+      
+    </section>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
