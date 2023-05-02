@@ -85,6 +85,7 @@ function formValidation(e) {
     return // stop execution of the function
   }
   
+  //get birth date
   const birthDate = new Date(year, month - 1, day)
   ageCalculation(birthDate)
   
